@@ -38,6 +38,7 @@
 namespace bfs {
 
 enum WmmModel : int8_t {
+  WMM2025,
   WMM2020,
   WMM2015_V2,
   WMM2015

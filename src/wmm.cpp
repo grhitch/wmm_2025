@@ -53,8 +53,12 @@ WmmData wrldmagm(const float alt, const float lat, const float lon,
       mag_field = geomag::GeoMag(decyear, pos, geomag::WMM2015);
       break;
     }
-    default: {
+    case WMM2020: {
       mag_field = geomag::GeoMag(decyear, pos, geomag::WMM2020);
+      break;
+    }
+    default: {
+      mag_field = geomag::GeoMag(decyear, pos, geomag::WMM2025);
       break;
     }
   }
